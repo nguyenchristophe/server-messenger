@@ -5,7 +5,7 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 
 const app = express();
-//const port = 80;
+const port = 80;
 const cors = require("cors");
 app.use(cors());
 
@@ -27,7 +27,7 @@ mongoose
   });
 
 
-var server = app.listen(process.env.PORT || 3000,function() {
+var server = app.listen(80,function() {
   var port = server.address().port; 
   console.log("Express is working on:"+port);
 
