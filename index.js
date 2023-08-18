@@ -5,7 +5,7 @@ const passport = require("passport");
 const LocalStrategy = require("passport-local").Strategy;
 
 const app = express();
-const port = 80;
+//const port = 80;
 const cors = require("cors");
 app.use(cors());
 
